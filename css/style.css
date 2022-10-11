@@ -24,9 +24,9 @@ a{
 
 header{
   background: #fff;
-}
-
-.header--inner{
+  position: fixed;
+  width: 100%;
+  z-index: 1;
   padding: 15px 0px;
 }
 
@@ -77,13 +77,13 @@ header{
 
 .work{
   background: #e3f2fd;
+  padding-top: 50px;
 }
 
 .work--inner{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding-top: 50px;
 }
 
 .imgbox{
@@ -112,20 +112,22 @@ header{
 
 .skills{
   background: #fff;
-}
-
-.skill--inner{
   padding-top: 50px;
   text-align: center;
 }
 
 .skill-list{
   display: grid;
-  grid-template-columns: 300px 300px 300px;
-  grid-template-rows: 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
   margin: 50px 0px 70px 0px;
   justify-content: center;
+}
+
+.skills a{
+  display: block;
+  width: 300px;
+  height: 300px;
 }
 
 .skill--item1{
@@ -147,26 +149,21 @@ header{
   background: URL(../img/skills/skills_6.png) no-repeat center/cover;
 }
 
-.skills a{
+.skills li{
   opacity: 0.7;
 }
 
-.skills a:hover{
+.skills li:hover{
   opacity: 1;
 }
 
-/*---------select plan---------*/
+/*---------plan---------*/
 
 .plan{
   background: #d0dfea;
-}
-
-.plan--inner{
   padding: 50px 0px;
   text-align: center;
 }
-
-/*--plan table--*/
 
 table{
   table-layout: fixed;
@@ -200,9 +197,6 @@ table tr:first-child{
 
 .sns{
   background: #e3f2fd;
-}
-
-.sns--inner{
   padding: 200px 0px;
 }
 
