@@ -55,6 +55,10 @@ header{
 /*---------keyvisual---------*/
 
 .keyvisual{
+  padding-top: 78px;
+}
+
+.keyvisual-inner{
   background: url(../img/keyvisual/keyvisual.jpg) no-repeat center/cover;
   text-align: center;
   padding: 400px 0px;
@@ -114,43 +118,26 @@ header{
   background: #fff;
   padding-top: 50px;
   text-align: center;
+  padding-bottom: 70px;
 }
 
 .skill-list{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 100px;
-  margin: 50px 0px 70px 0px;
+  margin-top: 50px;
   justify-content: center;
 }
 
-.skills a{
+.skills a, .skills img{
   display: block;
   width: 300px;
   height: 300px;
 }
 
-.skill--item1{
-  background: URL(../img/skills/skills_1.png) no-repeat center/cover;
-}
-.skill--item2{
-  background: URL(../img/skills/skills_2.png) no-repeat center/cover;
-}
-.skill--item3{
-  background: URL(../img/skills/skills_3.png) no-repeat center/cover;
-}
-.skill--item4{
-  background: URL(../img/skills/skills_4.png) no-repeat center/cover;
-}
-.skill--item5{
-  background: URL(../img/skills/skills_5.png) no-repeat center/cover;
-}
-.skill--item6{
-  background: URL(../img/skills/skills_6.png) no-repeat center/cover;
-}
-
 .skills li{
   opacity: 0.7;
+  transition: 0.7s;
 }
 
 .skills li:hover{
@@ -218,7 +205,7 @@ table tr:first-child{
   transition: 0.5s;
 }
 
-.sns a:hover{
+.sns li:hover{
   background: #fff;
 }
 
