@@ -52,6 +52,10 @@ header{
   color: #333;
 }
 
+.hamburger{
+  display: none;
+}
+
 /*---------keyvisual---------*/
 
 .keyvisual{
@@ -129,7 +133,7 @@ header{
   justify-content: center;
 }
 
-.skills a, .skills img{
+.skills li, .skills a, .skills img{
   display: block;
   width: 300px;
   height: 300px;
@@ -195,6 +199,7 @@ table tr:first-child{
 .sns li{
   width: 185px;
   text-align: center;
+  transition: 0.5s;
 }
 
 .sns a{
@@ -202,7 +207,6 @@ table tr:first-child{
   overflow: hidden;
   font-size: 40px;
   margin: 25px 0px;
-  transition: 0.5s;
 }
 
 .sns li:hover{
@@ -224,4 +228,169 @@ small{
   font-size: 10px;
   letter-spacing: 0.5px;
   margin: 20px 0px 25px 0px;
+}
+
+/*----------responsive TAB--------------------------------------------------*/
+
+@media screen and (min-width:768px) and ( max-width:1199px) {
+  /*-----共通------*/
+  .inner{
+    width: 97%;
+  }
+
+  /*-----keyvisual------*/
+  .keyvisual-inner{
+    padding: 250px 0px;
+  }
+
+  /*-----work------*/
+  .work{
+    padding: 50px 0px;
+  }
+
+  .work--inner{
+    display: block;
+  }
+
+  .imgbox, .work--right{
+    width: 100%;
+  }
+
+  /*-----skills------*/
+  .skill-list{
+    display: block;
+  }
+
+  .skills li{
+    margin: auto;
+  }
+
+  .skills li:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .skills li:last-child{
+    margin-bottom: 0px;
+  }
+
+}
+
+
+
+/*----------responsive SP--------------------------------------------------*/
+
+@media screen and (max-width: 767px) {
+
+  /*-----共通------*/
+  .inner{
+    width: 97%;
+  }
+
+  /*-----header------*/
+  .hamburger {
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: relative;
+    background-color: #fff;
+  }
+
+  .hamburger-bar {
+    display: block;
+    width: 80%;
+    height: 4px;
+    position: absolute;
+    background: #000;
+    transition: top 0.24s, transform 0.24s, opacity 0.24s;
+  }
+
+  .hamburger-bar:nth-child(1) {
+    top: 0;
+  }
+
+  .hamburger-bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .hamburger-bar:nth-child(3) {
+    top: 100%;
+    transform: translateY(-100%);
+  }
+
+  .contact--btn{
+    display: none;
+  }
+
+  /*-----keyvisual------*/
+  .main--title{
+    font-size: 40px;
+  }
+
+  .sub--title{
+    font-size: 30px;
+  }
+
+  .keyvisual-inner{
+    padding: 200px 0px;
+  }
+
+  /*-----work------*/
+  .work{
+    padding: 50px 0px;
+  }
+
+  .work--inner{
+    display: block;
+  }
+
+  .imgbox, .work--right{
+    width: 100%;
+  }
+
+  /*-----skills------*/
+  .skill-list{
+    display: block;
+  }
+
+  .skills li{
+    margin: auto;
+  }
+
+  .skills li:nth-child(3n){
+    margin-bottom: 80px;
+  }
+
+  .skills li:last-child{
+    margin-bottom: 0px;
+  }
+
+  /*-----skills------*/
+  table th{
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  td{
+    font-size: 12px;
+  }
+
+/*-----sns------*/
+  .sns{
+    padding: 50px 15px;
+  }
+
+  .sns ul{
+    display: block;
+  }
+
+  .sns li{
+    width: 100%;
+    padding: 50px 0px;
+  }
+
+  .sns a{
+    font-size: 40px;
+    margin: 25px 0px;
+  }
 }
